@@ -69,8 +69,14 @@ document.querySelector("#equal").addEventListener("click",() => {
 })
 
 copyButton.addEventListener("click", () => {
+  if(copyButton.innerText === "Copy"){
   copyButton.innerText = "Copied!"
   navigator.clipboard.writeText(resultInput.value);
   copyButton.classList.add("success")
+  }else{
+    copyButton.classList.remove("success")
+    copyButton.innerText = "Copy"
+  }
 })
+
 
