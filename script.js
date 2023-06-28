@@ -55,7 +55,6 @@ input.addEventListener("keydown",(ev) => {
 keys.forEach((charKeyBtn) => {
   charKeyBtn.addEventListener("click", () => {
     input.value += charKeyBtn.dataset.value;
-    input.focus();
   })
 })
 
